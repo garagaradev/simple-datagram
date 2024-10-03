@@ -21,7 +21,7 @@ func main(){
   }
   defer conn.Close()
 
-  fmt.Printff("Listening on %s\n", address)
+  fmt.Printf("Listening on %s\n", address)
 
   //buffer for accepting data
   buffer := make([]byte, 1024)
