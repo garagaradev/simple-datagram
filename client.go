@@ -25,7 +25,7 @@ func main(){
   // the datagram
   message := []byte("Hello, this is a datagram!")
   //sending the datagram
-  _, err := conn.Write(message)
+  _, err = conn.Write(message)
   if err != nil {
     fmt.Println("Error sending datagram:", err)
     return
