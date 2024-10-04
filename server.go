@@ -7,7 +7,7 @@ import (
 
 func main(){
   //create a UDP socket on PORT 8080
-  address := ":8080"
+  address := "localhost:8080"
   udpAddr, err := net.ResolveUDPAddr("udp", address)
   if err != nil {
     fmt.Println("Error resolving address:", err)
